@@ -58,6 +58,7 @@
 }
 
 .card-tag .card-date2 {
+    color: rgb(75, 75, 75);
     font-family: 'Architects Daughter', cursive;
     text-align: center;
     font-size: 1.2rem;
@@ -115,4 +116,9 @@
 .card1 .card-link {
     color: rgb(117, 95, 70);
     border-color: rgb(117, 95, 70);
-} 
+}
+
+.card2 .card-link {
+    color: rgb(75, 75, 75);
+    border-color: rgb(75, 75, 75);
+}
