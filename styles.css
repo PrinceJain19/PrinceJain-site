@@ -50,19 +50,17 @@ hr {
 }
 
 .list-item-inline {
-    display: inline;
+    display: inline-block;
     padding: 0rem 1rem;
 }
 
 /* Nav */
 .navigation {
     background-image: linear-gradient(to right, #74DFE6, #45A29E);
-    /* background-color: var(--primary-color); */
     color: white;
     padding: 1rem;
     border-bottom-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    height: 75.200px;
 }
 
 .navigation .nav-brand {
@@ -71,7 +69,12 @@ hr {
 }
 
 .navigation .nav-pills {
-    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: stretch;
+    padding: 0px;
+    margin-bottom: 0px;
 }
 
 .navigation .link-active {
@@ -137,24 +140,46 @@ hr {
     font-size: 1.75rem;
 }
 
-.footer ul {
+.footer .social-links {
     padding-inline-start: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer .link {
     font-size: 1.5em;
+    display: block;
+    width: 8rem;
+    height: 2rem;
+}
+
+.footer .link, span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
 }
 
 .footer .fa:hover {
     opacity: 0.85;
     font-size: 1.57em;
-    padding: 0px 14px;
+    /* padding: 0px 13.65px; */
 }
 
 .navigation .link {
     color: white;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    display: block;
+    /* justify-content: center; */
+    width: 6rem;
+    height: 2rem;
+}
+
+.navigation .link, span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
 }
 
 .fa {
@@ -164,5 +189,4 @@ hr {
 .navigation .link:hover {
     opacity: 0.85;
     font-size: 1.07rem;
-    padding: 0px 14px;
 }
