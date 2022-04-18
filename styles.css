@@ -31,6 +31,7 @@ hr {
 .link {
     text-decoration: none;
     padding: 0.5rem 1rem;
+    
 }
 .link-primary {
     background-color: var(--primary-color);
@@ -102,14 +103,19 @@ hr {
 }
 
 .hero .hero-heading {
+    width: 100%;
     padding-top: 1rem;
     color: var(--dark-grey);
     text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
 }
 
 /* Sections */
 .section {
-    padding: 2rem; 
+    padding: 2rem;
 }
 
 .section h1 {
@@ -164,15 +170,13 @@ hr {
 .footer .fa:hover {
     opacity: 0.85;
     font-size: 1.57em;
-    /* padding: 0px 13.65px; */
 }
 
 .navigation .link {
     color: white;
     display: block;
-    /* justify-content: center; */
-    width: 6rem;
-    height: 2rem;
+    width: 5rem;
+    height: 1.5rem;
 }
 
 .navigation .link, span {
@@ -186,7 +190,7 @@ hr {
     margin-top: 0rem;
 }
 
-.navigation .link:hover {
-    opacity: 0.85;
+.link:hover {
+    opacity: 0.9;
     font-size: 1.07rem;
 }
